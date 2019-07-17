@@ -40,3 +40,5 @@ function MyComponent() {
 The state object can be whatever you want it to be.  Keys from the state object will get parsed and automatically added to the dispatcher as a single-value updater.  For example, if you passed a state object of `{foo: 1}`, `dispatch.foo(newFoo: number)` gets added to the dispatcher.  As a result, custom actions cannot share the same name as state keys.
 
 Custom actions are also automatically added to the dispatcher with the keys you provide.  Action creators are functions that take the previous state and return an action (a function that returns a partial state update).  Or, more simply, they take the format: `(prevState: State) => (...args: any[]) => Partial<State>`.  The action creators can only accept 0 or 1 (prevState) argument.  Actions themselves can take arguments and they will need to be called with those arguments when they're called from the dispatcher. 
+
+Check out [the tests](https://github.com/FlexShopper/autoreducer/blob/master/src/__tests__/useAutoReducer.tsx) for more examples!
