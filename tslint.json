@@ -1,0 +1,285 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-clean-code"
+  ],
+  "jsRules": {},
+  "rules": {
+    "arrow-parens": {
+      "severity": "error",
+      "options": [
+        "ban-single-arg-parens"
+      ]
+    },
+    "await-promise": {
+      "severity": "error"
+    },
+    "ban-comma-operator": {
+      "severity": "error"
+    },
+    "ban-ts-ignore": {
+      "severity": "error"
+    },
+    "binary-expression-operand-order": {
+      "severity": "error"
+    },
+    "cyclomatic-complexity": {
+      "severity": "warning",
+      "options": [
+        12
+      ]
+    },
+    "deprecation": {
+      "severity": "warning"
+    },
+    "encoding": {
+      "severity": "default"
+    },
+    "function-constructor": {
+      "severity": "error"
+    },
+    "increment-decrement": {
+      "severity": "error"
+    },
+    "indent": {
+      "options": [
+        "spaces",
+        4
+      ],
+      "severity": "error"
+    },
+    "interface-name": {
+      "options": [
+        "never-prefix"
+      ]
+    },
+    "linebreak-style": {
+      "severity": "warning",
+      "options": [
+        "LF"
+      ]
+    },
+    "max-file-line-count": {
+      "severity": "warning",
+      "options": [
+        400
+      ]
+    },
+    "no-any": {
+      "severity": "warning"
+    },
+    "no-consecutive-blank-lines": {
+      "severity": "error"
+    },
+    "no-console": {
+      "severity": "warning",
+      "options": [
+        "log",
+        "warning",
+        "trace"
+      ]
+    },
+    "no-default-export": {
+      "severity": "error"
+    },
+    "no-duplicate-imports": {
+      "severity": "error",
+      "options": {
+        "allow-namespace-imports": true
+      }
+    },
+    "no-duplicate-switch-case": {
+      "severity": "error"
+    },
+    "no-dynamic-delete": {
+      "severity": "error"
+    },
+    "no-empty-interface": {
+      "severity": "off"
+    },
+    "no-floating-promises": {
+      "severity": "error"
+    },
+    "no-invalid-template-strings": {
+      "severity": "warning"
+    },
+    "no-irregular-whitespace": {
+      "severity": "error"
+    },
+    "no-non-null-assertion": {
+      "severity": "warning"
+    },
+    "no-object-literal-type-assertion": {
+      "severity": "error"
+    },
+    "no-parameter-reassignment": {
+      "severity": "warning"
+    },
+    "no-require-imports": {
+      "severity": "error"
+    },
+    "no-return-await": {
+      "severity": "error"
+    },
+    "no-sparse-arrays": {
+      "severity": "warning"
+    },
+    "no-switch-case-fall-through": {
+      "severity": "error"
+    },
+    "no-unnecessary-callback-wrapper": {
+      "severity": "error"
+    },
+    "no-unnecessary-initializer": {
+      "severity": "error"
+    },
+    "no-unused-expression": {
+      "severity": "warning",
+      "options": [
+        "allow-fast-null-checks",
+        "allow-new",
+        "allow-tagged-template"
+      ]
+    },
+    "number-literal-format": {
+      "severity": "error"
+    },
+    "prefer-conditional-expression": {
+      "severity": "warning",
+      "options": [
+        "check-else-if"
+      ]
+    },
+    "prefer-method-signature": {
+      "severity": "error"
+    },
+    "prefer-object-spread": {
+      "severity": "error"
+    },
+    "prefer-readonly": {
+      "severity": "warning"
+    },
+    "prefer-switch": {
+      "severity": "warning",
+      "options": {
+        "min-cases": 3
+      }
+    },
+    "prefer-template": {
+      "severity": "error"
+    },
+    "prefer-while": {
+      "severity": "error"
+    },
+    "promise-function-async": {
+      "severity": "error"
+    },
+    "quotemark": {
+      "severity": "error",
+      "options": [
+        "avoid-escape",
+        "avoid-template",
+        "single",
+        "jsx-double"
+      ]
+    },
+    "restrict-plus-operands": {
+      "severity": "error"
+    },
+    "return-undefined": {
+      "severity": "error"
+    },
+    "strict-type-predicates": {
+      "severity": "warning"
+    },
+    "trailing-comma": {
+      "severity": "error",
+      "options": {
+        "esSpecCompliant": true,
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "never",
+          "imports": "never",
+          "exports": "never",
+          "typeLiterals": "always"
+        },
+        "singleline": "never"
+      }
+    },
+    "unnecessary-bind": {
+      "severity": "error"
+    },
+    "use-default-type-parameter": {
+      "severity": "warning"
+    },
+    "whitespace": {
+      "options": [
+        "check-branch",
+        "check-decl",
+        "check-module",
+        "check-operator",
+        "check-preblock",
+        "check-rest-spread",
+        "check-separator",
+        "check-type",
+        "check-type-operator",
+        "check-typecast"
+      ]
+    },
+    "try-catch-first": true,
+    "no-flag-args": true,
+    "no-for-each-push": true,
+    "no-complex-conditionals": true,
+    "prefer-dry-conditionals": true,
+    "only-arrow-functions": true,
+    "no-commented-out-code": true,
+    "no-banned-terms": true,
+    "no-constant-condition": true,
+    "no-document-domain": true,
+    "no-document-write": true,
+    "no-empty-line-after-opening-brace": true,
+    "no-for-in": true,
+    "no-function-expression": true,
+    "no-string-based-set-immediate": true,
+    "no-string-based-set-interval": true,
+    "no-string-based-set-timeout": true,
+    "react-anchor-blank-noopener": true,
+    "react-no-dangerous-html": true,
+    "no-with-statement": true,
+    "possible-timing-attack": true,
+    "no-useless-files": true,
+    "jsx-no-lambda": false,
+    "react-tsx-curly-spacing": [
+      true,
+      "never"
+    ],
+    "react-unused-props-and-state": false,
+    "no-extra-semi": true,
+    "no-multi-spaces": true,
+    "object-curly-spacing": [
+      true,
+      "always"
+    ],
+    "array-bracket-spacing": [
+      true,
+      "always",
+      {
+        "singleValue": true
+      }
+    ],
+    "jsx-no-lambda": false
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-microsoft-contrib",
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "**/*.json",
+      "dist/**/*"
+    ]
+  }
+}

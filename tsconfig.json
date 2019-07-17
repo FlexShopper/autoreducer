@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es3",
+    "sourceMap": true,
+    "jsx": "react",
+    "noUnusedLocals": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "declarationMap": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "esModuleInterop": true,
+    "outDir": "./dist/",
+    "baseUrl": "./src/"
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "paths": [
+    "./src"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "autoreducer",
+  "version": "0.0.1",
+  "description": "useAutoReducer hook around useReducer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edward Drapkin <edwarddrapkin@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/FlexShopper/autoreducer.git",
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "@types/react": "^16.8.23",
+    "@types/react-test-renderer": "^16.8.2",
+    "@types/sinon": "^7.0.13",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "jest-enzyme": "^7.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sinon": "^7.3.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "tslint-clean-code": "^0.2.9",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.3"
+  }
+}
