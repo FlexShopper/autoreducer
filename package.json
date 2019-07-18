@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "prepublish": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Edward Drapkin <edwarddrapkin@gmail.com>",
   "license": "MIT",
