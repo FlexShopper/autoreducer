@@ -1,5 +1,7 @@
 # useAutoReducer
 
+[![Build Status](https://travis-ci.com/FlexShopper/autoreducer.svg?branch=master)](https://travis-ci.com/FlexShopper/autoreducer)
+
 `useAutoReducer` is a React Hook around `useReducer` that aims to simplify and streamline the usage of complex state in functional React components.  Its primary design goal is simplicity and predictability.
 
 ## Example
