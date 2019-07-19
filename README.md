@@ -1,4 +1,4 @@
-# useAutoReducer
+# useAutoReducer <img src="https://raw.githubusercontent.com/FlexShopper/autoreducer/master/logo.png" width="50" height="50" />
 
 [![Build Status](https://travis-ci.com/FlexShopper/autoreducer.svg?branch=master)](https://travis-ci.com/FlexShopper/autoreducer)
 
@@ -11,7 +11,7 @@
 import { useAutoReducer } from 'autoreducer';
 
 function MyComponent() {
-    const [ dispatch, state ] = useAutoReducer({
+    const [ state, dispatch ] = useAutoReducer({
         topCount: 0,
         bottomCount: 0 
     }, {
@@ -47,4 +47,60 @@ Check out [the tests](https://github.com/FlexShopper/autoreducer/blob/master/src
 
 ## TypeScript
 
-autoreducer ships with TS definitions, so it should Just Work out of the box!
+autoreducer ships with TS definitions, so it should Just Work out of the box!  `useAutoReducer` is type safe, supports dispatcher autocompletion, and should infer your types from the shape of the provided initial state and action creators. 
+
+## Comparisons with useReducer
+
+### Counter 
+
+This counter example is sourced from the React `useReducer` [documentation](https://reactjs.org/docs/hooks-reference.html#usereducer)
+
+#### useReducer
+
+```typescript jsx
+const initialState = {count: 0};
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      return {count: state.count + 1};
+    case 'decrement':
+      return {count: state.count - 1};
+    default:
+      throw new Error();
+  }
+}
+
+function Counter() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  return (
+    <>
+      Count: {state.count}
+      <button onClick={() => dispatch({type: 'increment'})}>+</button>
+      <button onClick={() => dispatch({type: 'decrement'})}>-</button>
+    </>
+  );
+}
+```
+
+#### useAutoReducer
+```typescript jsx
+
+const initialState = { count: 0 };
+const actions = {
+  increment: state => () => {count: state.count + 1},
+  decrement: state => () => {count: state.count - 1}
+};
+
+function Counter() {
+  const [state, dispatch] = useAutoReducer(initialState, actions);
+  return (
+    <>
+      Count: {state.count}
+      <button onClick={dispatch.increment}>+</button>
+      <button onClick={dispatch.decrement}>-</button>
+    </>
+  );
+}
+```
+
