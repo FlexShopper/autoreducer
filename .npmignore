@@ -10,3 +10,4 @@ tslint.json
 yarn.lock
 yarn-error.log
 **/__tests__/*
+logo.png
